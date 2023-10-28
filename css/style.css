@@ -1,14 +1,25 @@
 
 
- body {
+ /*body {
   font-family: 'Open Sans', sans-serif;
-  /*background-color: #f2f2f2;*/
+ 
   background-image: url(../assent/estrellademar.jpg);
   font-size: 16px;
   color: #222;
   font-weight: normal;
   letter-spacing: 0.03em;
+}*/
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #222;
+  font-weight: normal;
+  letter-spacing: 0.03em;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+    url(../assent/estrellademar.jpg);
 }
+
 a {
   color: #7447ae;
   -webkit-transition: all 0.2s;
@@ -44,12 +55,12 @@ img {
 
 /* Hero Section */
 header.hero {
-  background: url(../assent/cataratasmujer.jpg) no-repeat center center fixed;
+  background: url(../assent/poncho.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  color: #fcf975;
+  color: hsl(60, 100%, 100%);
   padding-bottom: 80px;
 }
 
@@ -111,25 +122,25 @@ ul.social-links li a img {
   transform: translateY(-80px);
   -webkit-transform: translateY(-80px);
   padding: 5em 3em;
-  background-color: #fff;
+  background-color: #ccb63c;
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.15);
 }
 h4.sub-heading {
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  color: #4e4c58;
+  color: #256b8b;
 }
 h1.heading {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  color: #4e4c58;
+  color: #111d1b;
   font-size: 3em;
   position: relative;
   padding-bottom: 10px;
 }
 h1.heading span {
-  font-weight: 600;
+  font-weight: 500;
 }
 h1.heading:after {
   content: '';
@@ -147,7 +158,7 @@ h1.heading.pink:after {
   background-color: #ff2a75;
 }
 
-
+/*destinos*/
 .swiper-container {
   width: 100%;
   height: 100%;
@@ -155,13 +166,13 @@ h1.heading.pink:after {
 }
 .swiper-slide {
   font-size: 18px;
-  background: #fff;
+  background: #f8f5f5;
 }
 
 .client-box {
   background-color: #fff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.03);
-  padding: 3.5em 2em;
+  padding: 1.2em 1em;
   border-radius: 5px;
   border: 1px solid #eee;
   text-align: center;
@@ -170,7 +181,9 @@ h1.heading.pink:after {
   transition: all 0.2s;
 }
 .client-box .client-logo {
-  max-height: 120px;
+  /*max-height: 120px; */
+  width: auto; /* o puedo usar un valor en px si lo prefiero , */
+  height: auto;
 }
 .client-box h3.title {
   color: #4e4c58;
@@ -208,11 +221,11 @@ h1.heading.pink:after {
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
 }
 .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
-  background-image: url(../assets/arrow-right.png);
+  background-image: url(../assent/arrow-right.png);
   right: -40px;
 }
 .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
-  background-image: url(../assets/arrow-left.png);
+  background-image: url(../assent/arrow-left.png);
   left: -40px;
 }
 
@@ -272,14 +285,14 @@ h1.heading.pink:after {
 .stat-box h3 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  color: #4e4c58;
+  color: #f0ac5e;
   font-size: 2em;
 }
 
 
 /* Contact Banner */
 .contact-banner {
-  background: url(../assets/bg-at.png) #f1e759 repeat;
+  background: url(../assent/bg-pat.png) #14140e ;
   color: #fff;
   padding: 6em;
 }
@@ -294,14 +307,14 @@ h1.heading.pink:after {
 
 /* Footer */
 .footer {
-  background-color: #00c57a;
+  background-color: #e2b65f ;
   padding: 5em;
 }
 .footer h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 3em;
-  color: #aceff1;
+  color: #865e08;
   margin-bottom: 2em;
 }
 .footer h1 span {
@@ -328,7 +341,7 @@ h1.heading.pink:after {
 
 /* Sub-footer */
 .sub-footer {
-  background-color: #319275;
+  background-color: #4f1e24 ;
   padding: 2em;
   color: #9ae2dc;
   font-family: 'Montserrat', sans-serif;
@@ -339,7 +352,7 @@ h1.heading.pink:after {
   font-size: 1.2em;
 }
 .sub-footer p a {
-  color: #fff;
+  color: #15632f;
 }
 .sub-footer p a:hover {
   opacity: 0.8;

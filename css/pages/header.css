@@ -29,7 +29,7 @@ header{
             }
             & p{
                 width: 100%;
-                color: orangered;
+                color: rgb(196, 180, 113);
                 text-align: end;
                 font-size: calc(1rem + 1vw);
                 font-weight: 600;
