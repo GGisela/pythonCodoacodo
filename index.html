@@ -6,37 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
  
   <title>Agencia de turismo</title>
-
-  <!-- Bootstrap -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/bootstrap-theme.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/swiper.min.css">
   <link href="css/style.css" rel="stylesheet">
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:300,400,700" rel="stylesheet">
 
 
-
     </head>
     <body>
+        <script>
+        alert("Contactanos para recibir Novedades")
+      </script>
       <header class="hero">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 col-md-offset-6 col-xs-12">
+           
               <nav> <!--  lineas  de arriba izquierda del menu -->
-                <div id="menu-toggle">
-                  <div class="hamburger">
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
-                  </div>
-                  <div class="cross">
-                    <span class="line"></span>
-                    <span class="line"></span>
-                  </div>
-                </div>
-                <ul class="main-nav">  <!--lista de menu  -->
+           
+                </div> <!--lista de menu -->
+                <ul class="main-nav"> 
                   <li><a href="#">Home</a></li>
                   <li><a href="./pages/vuelos.html">vuelos</a></li>                  
                   <li><a href="#">hospedaje</a></li>
@@ -44,13 +32,12 @@
                 </ul>
               </nav>
               <!-- <a href="#" class="menu"><img src="assets/menu.png"></a> -->
-              <div class="hero-text">
-                <h1><span>Aventurate con Nosotros</span> <br> El viajesito...<br></h1>
+              <h1><span>Aventurate con Nosotros</span> <br> El viajesito...<br></h1>
                 <h3>En Nuentra Agencia de Viajes encontraras <strong> tu Destino Soñado, </strong>
               Que lo convertira en un momento Especial ...
                 </h3>
-                <a href="#" class="btn btn-lg btn-primary"> <strong> Seguinos¡</strong> </a>
-                <h3 class="text-left"> <a href="./pages/targentino.html">Recorrido por Argentina &#8594;</a></h3> 
+                <a a href="./pages/contacto.html"><button><strong>Contactanos</strong></button> </a>
+                <h3 class="text-left"> <a href="./pages/targentino.html"> Recorrido por <strong> Argentina </strong></a></h3> 
               </div>
             </div>
           </div>
@@ -97,12 +84,10 @@
                     <p class="text-left tag">ARS $341.720</p>
                     <p class="text-left"><a href="#">No esperes mas...!! &#8594;</a></p>
                   </div>
-                </div>
-                
+                </div> 
               </div>
-              <!-- Add Arrows (botones para deslizar) -->
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
+              
+          
             </div>
           </div>
         </div>
@@ -264,83 +249,6 @@
           </div>
         </div>
       </footer>
-
-      <!-- Some Javascript -->
-      <script src="js/jquery-2.1.1.js"></script>
-      <script src="js/swiper.jquery.min.js"></script>
-      
-
-      <!-- Initialize Client Swiper -->
-      <script>
-      var swiper1 = new Swiper('.client-swiper', {
-        slidesPerView: 3,
-        paginationClickable: true,
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        spaceBetween: 30,
-        // Responsive breakpoints
-        breakpoints: {
-          // when window width is <= 320px
-          320: {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            pagination: '.swiper-pagination'
-          },
-          // when window width is <= 480px
-          480: {
-            slidesPerView: 1,
-            spaceBetween: 20
-          },
-          // when window width is <= 640px
-          640: {
-            slidesPerView: 1,
-            spaceBetween: 30
-          }
-        }
-      });
-      // Inicializa testimonios Swiper (responsitive)
-      var swiper2 = new Swiper('.testimonial-swiper', {
-        slidesPerView: 3,
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-        spaceBetween: 30,
-        grabCursor: true,
-        freeMode: true,
-        breakpoints: {
-          // when window width is <= 320px
-          320: {
-            slidesPerView: 1,
-            spaceBetween: 10,
-          },
-          // when window width is <= 480px
-          480: {
-            slidesPerView: 1,
-            spaceBetween: 10
-          },
-          // when window width is <= 640px
-          640: {
-            slidesPerView: 1,
-            spaceBetween: 10
-          }
-        }
-      });
-      </script>
-      <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-      <script src="js/jquery.counterup.min.js"></script>
-      <script>
-      // Counterup
-      $('.counter').counterUp({
-        time: 1000
-      });
-
-      // Main Navigation
-      $('#menu-toggle').click(function(){
-        $(this).toggleClass('open'),
-        $('.main-nav').toggleClass('show-it');
-      })
-      </script>
-
-   
-      
+      </script>  
     </body>
     </html>
