@@ -10,44 +10,70 @@
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:300,400,700" rel="stylesheet">
-
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Titillium+Web:wght@200;300;400;600;700&family=Yellowtail&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     </head>
     <body>
         <script>
         alert("Contactanos para recibir Novedades")
       </script>
       <header class="hero">
-        <div class="container">
-          <div class="row">
-           
-              <nav> <!--  lineas  de arriba izquierda del menu -->
-           
-                </div> <!--lista de menu -->
-                <ul class="main-nav"> 
-                  <li><a href="#">Home</a></li>
+        <div class="col-1">
+        <div class="nav">
+          <nav>
+            <li><a href="#">Home</a></li>
                   <li><a href="./pages/vuelos.html">vuelos</a></li>                  
                   <li><a href="#">hospedaje</a></li>
                   <li><a href="./pages/contacto.html">contacto</a></li>
                 </ul>
-              </nav>
-              <!-- <a href="#" class="menu"><img src="assets/menu.png"></a> -->
-              <h1><span>Aventurate con Nosotros</span> <br> El viajesito...<br></h1>
-                <h3>En Nuentra Agencia de Viajes encontraras <strong> tu Destino Soñado, </strong>
-              Que lo convertira en un momento Especial ...
-                </h3>
-                <a a href="./pages/contacto.html"><button><strong>Contactanos</strong></button> </a>
-                <h3 class="text-left"> <a href="./pages/targentino.html"> Recorrido por <strong> Argentina </strong></a></h3> 
+          </div>
+          </nav>
+        </div>
+        <div class="container">
+            </div> <!--lista de menu -->
+               <!-- <a href="#" class="menu"><img src="assets/menu.png"></a> -->
+              <h1><strong>Aventurate <h3>con Nosotros</h3></strong></h1>
+                <h2><strong> Tu Destino Soñado, </strong></h2>
+                <a class="boton"  href="./pages/contacto.html"><button>Contactanos<strong></strong></button> </a>
+                <h3> <a href="./pages/targentino.html"> Recorrido por <strong> Argentina </strong></a></h3> 
               </div>
             </div>
           </div>
         </div>
+        <div class="col-2">
+          <form class="formu">
+            <div class="fondo">
+            <h2>El Viajesito</h2>
+          
+              <p>
+                  <label for="desde">Origen</label>
+                  <input type="text" name="desde" id="desde" required>
+              </p>
+              <p>
+                  <label for="hasta">Destino</label>
+                  <input type="hasta" name="hasta" required>
+              </p>
+              <p> <!--aca va fecha-->
+                <label for="start">Fecha:</label>
+                <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31" />
+              </p>
+            </div> 
+              <p class="block">
+                  <button type="submit">Consultar</button>
+              </p>
+           
+          </form>
+          </div>
       </header>
 
       <section class="case-study">
+        <div class="col-3">
         <div class="container">
-          <div class="row">
-            <div class="col-md-12">
+          
+           
               <h4 class="sub-heading">Argentina En Cuotas</h4>
               <h1 class="heading purple"><span class="purple">Vuelos  Nacionales</span> <br>Reserva antes y aproche de grandes promociones</h1>
               <!-- Swiper (destinos nac con imagenes)-->
@@ -86,8 +112,6 @@
                   </div>
                 </div> 
               </div>
-              
-          
             </div>
           </div>
         </div>
@@ -148,29 +172,7 @@
                       <p class="designation">Pergamino, bs as</p>
                     </div>
                   </div>
-                  <div class="swiper-slide testimonial-box purple">
-                    <h1>Santiago de torur de Compras</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad </p>
-                    <div class="text-right">
-                      <p class="name">-Florencia Perez</p>
-                      <p class="designation">ciudad</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide testimonial-box blue">
-                    <h1>Cordoba circuito Express</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad </p>
-                    <div class="text-right">
-                      <p class="name">- Marta Gimenez</p>
-                      <p class="designation">Ciudad</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide testimonial-box pink">
-                    <h1>Valle de la Luna </h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad </p>
-                    <div class="text-right">
-                      <p class="name">- Catalina Rotman</p>
-                      <p class="designation">ciudad</p>
-                    </div>
+                 
                   </div>
                 </div>
                 <!-- Add Pagination (puntitos al pie de testimonios)-->
@@ -184,18 +186,18 @@
       <!-- Statistics (estadisticas) -->
       <section class="stats">
         <div class="container">
-          <div class="row">
-            <div class="col-md-4 text-center stat-box">
-              <h1 class="purple"><span class="counter">3.2</span>k</h1>
-              <h3>Seguidores en Redes</h3>
-            </div>
-            <div class="col-md-4 text-center stat-box">
-              <h1 class="blue counter">3000</h1>
-              <h3>Viajes Realizados</h3>
-            </div>
-            <div class="col-md-4 text-center stat-box">
-              <h1 class="pink"><span class="counter">18.3</span>k</h1>
-              <h3>Nuevas Reservas</h3>
+          <div class="boxnum">
+            <h1 class="purple"><span class="counter">3.2</span>k</h1>
+            <h3>Seguidores en Redes</h3>
+          </div>
+          <div class="boxnum">
+            <h1 class="blue counter">3000</h1>
+            <h3>Viajes Realizados</h3>
+          </div>
+          <div class="boxnum">
+            <h1 class="pink"><span class="counter">18.3</span>k</h1>
+            <h3>Nuevas Reservas</h3>
+           
             </div>
           </div>
         </div>
@@ -204,20 +206,16 @@
       <!-- Contact Banner (contacto)-->
       <section class="contact-banner">
         <div class="container">
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <h1>Llámenos para consultar sobre destinos y paquetes
-                0820.220.3322</h1>
-              <a href="#" class="btn btn-lg btn-primary">Encontranos en ...</a>
-            </div>
-          </div>
+          <h2>Llámenos para consultar sobre destinos y paquetes
+            0820.220.3322</h2> 
+<!--estapacio negro con dibujos--> 
         </div>
       </section>
 
       <!-- Footer (Reseña ,direccion y redes)-->
       <footer>
-        <div class="container-fluid">
-          <div class="row footer">
+        <div class="containerfluid">
+          <div class=" footer">
             <div class="col-md-12 text-center">
               <h1><span>Aventurate con Nosotros </span> El viajesito...<br></h1>
               <p>Horario de Atencion telefonica</p>
@@ -234,7 +232,8 @@
                      <li><a href="https://www.Twitter.com" target="_blank">Twitter</a></li>
 
                        <!-- Enlace a Instagram -->
-                      <li><a href="https://www.instagram.com" target="_blank">IG viajesitostour</a></li>
+                      <li><img src="/assent/in.png" alt="">
+                        <a href="https://www.instagram.com" target="_blank">IG viajesitostour</a></li>
 
                        <!-- Enlace a LinkedIn -->
                        <li>><a href="https://www.linkedin.com/in" target="_blank">Li Viajesito</a></li>
@@ -242,13 +241,11 @@
                     </section>
               </div>
           </div>
-          <div class="row sub-footer">
-            <div class="col-md-12 text-center">
-              <p>Diseñado por grupo 4"</p>
+          <div class="sub-footer">
+            <p>Creado en Codo a codo</p>
             </div>
           </div>
         </div>
       </footer>
-      </script>  
     </body>
     </html>
