@@ -4,31 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/pages/body.css">
-    
   
-    <title>Recorrido por Argentina</title>
+    <title>Recorriendo Argentina</title>
 </head>
 <body> 
+
 <header>
-    <nav> 
- 
-      </div> <!--lista de menu -->
-      <ul class="main-nav"> 
+  <div class="nav">
+   <div class="content">
+    <nav>
+      <ul>
         <li><a href="../index.html">Home</a></li>
-        <li><a href="../pages/vuelos.html">vuelos</a></li>                  
-        <li><a href="#">hospedaje</a></li>
-        <li><a href="../pages/contacto.html">contacto</a></li>
+        <li><a href="./pages/vuelos.html">Vuelos</a></li>                  
+        <li><a href="#">Argentina</a></li>
+        <li><a href="./pages/contacto.html">Contacto</a></li>
       </ul>
-    </nav></header>
-<!--fotos en carrusel
- <div class="slider">
-<img src="../assent/reco1.jpg" class="client-logo">
-</div>-->
+    </nav>
+    <br>
+    <br>
+    <span>Derecho Reservado@El Viajesito</span>
+  </div>
+  </div>
+</header>
+
 <section>
-    <img src="../assent/reco2.jpg" >
-    <img src="../assent/reco3.jpg" >
-    <img src="../assent/reco4.jpg" >
-     <img src="../assent/reco5.jpg" >
-    </section>
+  <div class="carrusel-container">
+    <img class="carrusel-item" src="../assent/reco6.jpg" alt="Imagen 1">
+    <img class="carrusel-item" src="../assent/reco3.jpg" alt="Imagen 2">
+    <img class="carrusel-item" src="../assent/reco4.jpg" alt="Imagen 3">
+    <img class="carrusel-item" src="../assent/reco5.jpg" alt="Imagen 4">
+  </div>
+  <button onclick="anterior()">Anterior</button>
+  <button onclick="siguiente()">Siguiente</button>
+</section>
+
+<script src="../js/page.js"></script>
+
+<footer >
+
+</footer>
+
 </body>
 </html>

@@ -1,21 +1,145 @@
 
-section{
+.content{
+   background-image: url('../../assent/bg-pat.png');
+   max-width: 600px;
+   margin: 0 auto;
+   margin-bottom: 20px;
+   margin-top: 20px;
+   padding: 50px;
+ 
+   border-radius: 20px;
+   box-shadow: 5px 5px 15px 2px;
+   font-size: 18px;
+    
+ }
+/* .content {
+   opacity: 0.5; /* Ajusta este valor según sea necesario (0.0 a 1.0) */
+ /*}*/
+ button{
+   position: relative;
+   background-color: transparent;
+   border-radius: 30px;
+   border:none;
+   outline:none;
+   height: 50px;
+   width: 190px;
+   box-shadow: 
+   5px 5px 10px #0008,
+   inset 10px 6px 15px #0008,
+   inset -5px -5px 8px #0004,
+   0 0 8px #0005;
+   font-size: 22px;
+   text-transform: uppercase;
+   cursor: pointer;
+   
+ }
+ button::after{
+   content: '';
+   position: absolute;
+   width: 20px;
+   height: 10px;
+   background-color: #fff8;
+   left: 10px;
+   transform: rotate(160deg);
+   border-radius: 50%;
+ }
+ .boton{
    display: flex;
-    width: 600px;
-    height: 430px;
+   justify-content: center;
+ }
+ .contact-info{
+   background-color: rgba(202, 143, 6, 0.896);
+ 
+ }
+ h1{
+   font-size: xx-large;
+ }
+ p{
+   font-family: Monserrat 400;
+ }
+ /*pagina argentina*/
+
+/* Estilos generales */
+body {
+  display: flex;
+  margin: 0;
+}
+
+/* Estilos del carrusel */
+
+
+
+.carrusel-container {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  /**/
+  background-color: #fff;
+  
+margin: 0 auto;
+margin-bottom: 20px;
+margin-top: 20px;
+padding: 50px;
+
+border-radius: 20px;
+box-shadow: 5px 5px 15px 2px;
 
 }
- section img {
-    width: 0%;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: .8;
-    transition: 0.5s ease ;
 
- }
- section img :hover{
-    cursor: crosshair;
-    width: 300px;
-    opacity: 1;
-    filter: contrast(120%);
- }
+.carrusel-item {
+  flex: 0 0 auto;
+  border-radius: 15px;
+  
+  max-width: 80%; /* Establece un ancho máximo del 80% del contenedor */
+  max-height: 40%;
+  display: none;
+}
+
+.carrusel-item.visible {
+  display: block;
+}
+nav {
+  display: flex;
+  background-attachment: scroll;
+  clear: both;
+ 
+  width: 100%;
+  list-style: none;
+  margin: 0;
+
+  
+  padding: 1em;
+  display: flex;
+  text-decoration: none;
+ 
+  flex-wrap: nowrap;
+  
+}
+.nav li a {
+  float: left;
+  text-decoration: none;
+  padding: 4px 20px 4px 8px;
+  padding: 1.5em;
+ font-size: 30px ;
+  text-decoration: none;
+  color: rgb(235, 255, 87);
+  flex-wrap: nowrap;
+}
+body {
+  display: flex;
+  max-width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 0.03em;
+background-color: #2F2C40;
+}
+.footer{
+  display: flex;
+  background: url(../assent/bg-pat.png) #14140e ;
+  color: #fff;
+  padding: 1em;
+}
+span{
+  color: white;
+}
