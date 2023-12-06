@@ -472,9 +472,11 @@ body {
   flex-direction: column;
   align-items: center;
 }
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+.cab{
+  position: relative;
+  background: url(../assent/cab.jpeg) #14140e ;
 
+  width: 100%;
+  height: auto;
+  display: block;
+}
